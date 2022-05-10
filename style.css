@@ -112,9 +112,11 @@
   margin: 5px 0;
 }
 
-/* .home .home-content .text-3 span, .text-2 span{
-  
-} */
+.home .home-content .text-2 span{
+  color: rgb(103, 243, 199);
+  font-size: 60px;
+  font-weight: 500;
+}
 .words{
   overflow: hidden;
   height: 80px;
