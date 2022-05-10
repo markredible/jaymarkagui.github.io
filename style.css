@@ -214,7 +214,7 @@ section{
 .box{
   display: flex;
   flex-wrap: wrap;
-  padding: 50px;
+  padding: 50px 0;
   /* background-color: #bbeeee; */
   justify-content: space-around;
   row-gap: 20px;
@@ -224,7 +224,7 @@ section{
   /* height: 300px; */
   width: 300px;
   /* background-color: rgb(23, 84, 138); */
-  padding: 25px 30px;
+  padding: 25px 20px;
   border: 2px solid #348f8f;
 }
 
@@ -257,16 +257,14 @@ section{
 }
 
 #android-logo{
-  font-size: 130px;
+  font-size: 120px;
   text-align: center;
-  padding-left: 25px;
   color: green;
 }
 
 #php-logo{
-  font-size: 130px;
+  font-size: 120px;
   text-align: center;
-  padding-left: 25px;
   color: steelblue;
 }
 
