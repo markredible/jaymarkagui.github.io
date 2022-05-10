@@ -112,10 +112,41 @@
   margin: 5px 0;
 }
 
-.home .home-content .text-3 span, .text-2 span{
+/* .home .home-content .text-3 span, .text-2 span{
+  
+} */
+.words{
+  overflow: hidden;
+  height: 80px;
+}
+.words span{
+  display: block;
+  height: 100%;
   color: rgb(103, 243, 199);
   font-size: 60px;
   font-weight: 500;
+  animation: spin_words 6s infinite;
+}
+
+@keyframes spin_words{
+  10%{
+    transform: translateY(-112%);
+  }
+  25%{
+    transform: translateY(-100%);
+  }
+  40%{
+    transform: translateY(-212%);
+  }
+  70%{
+    transform: translateY(-200%);
+  }
+  85%{
+    transform: translateY(-312%);
+  }
+  100%{
+    transform: translateY(-300%);
+  }
 }
 
 /* about section sytling */
