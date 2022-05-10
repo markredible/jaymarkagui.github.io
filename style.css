@@ -110,6 +110,7 @@
 .home .home-content .text-3{
   font-size: 35px;
   margin: 5px 0;
+  display: flex;
 }
 
 .home .home-content .text-2 span{
@@ -416,7 +417,7 @@ footer{
   .home .home-content .text-2 span{
     font-size: 50px;
   }
-  .home .home-content .text-3 span{
+  .home .home-content .words span{
     font-size: 50px;
     margin: 5px 0;
   }
@@ -447,7 +448,7 @@ footer{
   .home .home-content .text-2 span{
     font-size: 50px;
   }
-  .home .home-content .text-3 span{
+  .home .home-content .words span{
     font-size: 40px;
   }
 }
@@ -458,7 +459,7 @@ footer{
   .home .home-content .text-2 span{
     font-size: 50px;
   }
-  .home .home-content .text-3 span{
+  .home .home-content .words span{
     font-size: 30px;
   }
 }
