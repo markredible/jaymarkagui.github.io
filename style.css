@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -7,7 +9,7 @@
 }
 
 .navbar{
-  background-color: #348f8f;
+  background-color: #141616;
   z-index: 999;
   width: 100%;
   padding: 5px 0;
@@ -49,7 +51,7 @@
 }
 
 .navbar .menu li a:hover{
-  color: #2a6969;
+  color: #D61939;
   transition: .5s;
 }
 
@@ -66,26 +68,26 @@
 }
 
 .navbar .social-media p a:hover{
-  color: #2a6969;
+  color: #D61939;
   transition: .5s;
 }
 
 /* styling hamburger nav */
 .hamburger{
-  color: white;
+  color: #D61939;
   font-size: 23px;
   cursor: pointer;
   display: none;
 }
 
 .hamburger:hover{
-  color: #2a6969;
+  color: white;
 }
 
 /* home section styling */
 .home{
   display: flex;
-  background: url(./images/backgroundih.png);
+  background: url(./images/polotno.png);
   height: 100vh;
   color: white;
   min-height: 500px;
@@ -114,7 +116,7 @@
 }
 
 .home .home-content .text-2 span{
-  color: rgb(103, 243, 199);
+  color: #D61939;
   font-size: 60px;
   font-weight: 500;
 }
@@ -125,7 +127,7 @@
 .words span{
   display: block;
   height: 100%;
-  color: rgb(103, 243, 199);
+  color: #D61939;
   font-size: 60px;
   font-weight: 500;
   animation: spin_words 6s infinite;
@@ -165,11 +167,11 @@ section{
   position: relative;
   text-align: center;
   font-size: 40px;
-  color: #2a6969;
+  color: #141616;
   font-weight: 600;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'New Rocker', cursive;
 }
 
 .about .about-content{
@@ -187,7 +189,7 @@ section{
   height: 400px;
   width: 400px;
   object-fit: cover;
-  border: 2px solid #2a6969;
+  border: 2px solid #141616;
   border-radius: 6px;
 }
 
@@ -199,7 +201,7 @@ section{
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #2a6969;
+  color: #141616;
 }
 
 .about .about-content .right p{
@@ -211,8 +213,9 @@ section{
 .about .about-content .right a{
   display: inline-block;
   color: white;
-  background-color: #2a6969;
+  background-color: #D61939;
   text-transform: uppercase;
+  border: 2px solid #D61939;
   padding: 10px 30px;
   margin-top: 20px;
   border-radius: 6px;
@@ -223,15 +226,15 @@ section{
 }
 
 .about .about-content .right a:hover{
-  color: #2a6969;
-  border: 2px solid #2a6969;
+  color: #D61939;
+  border: 2px solid #D61939;
   background-color: transparent;
 }
 
 /*skills styling*/
 .skills{
   padding: 100px 0;
-  background-color: #2a6969;
+  background-color: #141616;
 }
 
 .skills .title{
@@ -239,10 +242,10 @@ section{
   text-align: center;
   font-size: 40px;
   font-weight: 800;
-  color: white;
+  color: #D61939;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'New Rocker', cursive;
 }
 
 .box{
@@ -259,7 +262,7 @@ section{
   width: 300px;
   /* background-color: rgb(23, 84, 138); */
   padding: 25px 20px;
-  border: 2px solid #348f8f;
+  border: 2px solid #D61939;
 }
 
 .card p i{
@@ -325,20 +328,20 @@ section{
   text-align: center;
   font-size: 40px;
   font-weight: 800;
-  color: #348f8f;
+  color: #141616;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'New Rocker', cursive;
 }
 
 .project-picture{
   height: 300px;
   width: 350px;
-  background-color: #2a6969;
+  background-color: #141616;
 }
 
 footer{
-  background-color: #2a6969;
+  background-color: #141616;
   padding: 50px 50px 20px;
 }
 
@@ -358,7 +361,7 @@ footer{
 }
 
 .copyright i:hover{
-  color: #348f8f;
+  color: #D61939;
 }
 
 /*Responsive media query start*/
@@ -388,6 +391,7 @@ footer{
   }
   .hamburger i.active::before{
     content: "x";
+    color: white;
   }
   .navbar .menu{
     position: fixed;
@@ -395,7 +399,7 @@ footer{
     width: 100%;
     left: -100%;
     top: 0;
-    background-color: #4a8f8f;
+    background-color: #141616;
     text-align: center;
     padding-top: 80px;
     transition: all 0.5s ease;
