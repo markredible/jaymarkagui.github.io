@@ -11,4 +11,9 @@ $(document).ready(function(){
       $('.navbar .menu').toggleClass("active")
       $('.hamburger i').toggleClass("active")
   });
+
+  $('.menu li').click(function(){
+    $('.navbar .menu').removeClass("active")
+    $('.hamburger i').removeClass("active")
+});
 })
