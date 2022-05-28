@@ -181,14 +181,10 @@ section{
   justify-content: space-between;
 }
 
-.about .about-content .left{
-  width: 45%;
-}
-
 .about .about-content .left img{
-  height: 400px;
+  height: 450px;
   width: 400px;
-  object-fit: cover;
+  object-fit: fill;
   border: 2px solid #141616;
   border-radius: 6px;
 }
@@ -377,7 +373,7 @@ footer{
 }
 @media(max-width: 1104px){
   .about .about-content .left img{
-    height: 350px;
+    height: 400px;
     width: 350px;
   }
 }
