@@ -9,7 +9,7 @@
 }
 
 .navbar{
-  background-color: #141616;
+  background-color: white;
   z-index: 999;
   width: 100%;
   padding: 5px 0;
@@ -30,8 +30,12 @@
   justify-content: space-between;
 }
 
-.navbar .logo img{
-  height: 38px;
+.navbar .max-width .otherside{
+  display: flex;
+  align-items: center;
+}
+.navbar .logo h1{
+  color: #1e3e3e;
 }
 
 .navbar .menu li{
@@ -40,7 +44,7 @@
 }
 
 .navbar .menu li a{
-  color: white;
+  color: #1e3e3e;
   font-size: 17px;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
@@ -51,12 +55,18 @@
 }
 
 .navbar .menu li a:hover{
-  color: #D61939;
+  color: #f34044;
   transition: .5s;
 }
 
+.navbar .social-media{
+  background-color: #365a5a;
+  padding-right: 25px;
+  border-radius: 15px;
+}
 .navbar .social-media p{
   display: inline-block;
+  padding: 10px 0;
 }
 
 .navbar .social-media p a{
@@ -68,28 +78,28 @@
 }
 
 .navbar .social-media p a:hover{
-  color: #D61939;
+  color: #f34044;
   transition: .5s;
 }
 
 /* styling hamburger nav */
 .hamburger{
-  color: #D61939;
+  color: #1e3e3e;
   font-size: 23px;
   cursor: pointer;
   display: none;
 }
 
 .hamburger:hover{
-  color: white;
+  color: #f34044;
 }
 
 /* home section styling */
 .home{
   display: flex;
-  background: url(./images/polotno.png);
+  background: url(./images/background.jpg) center;
   height: 100vh;
-  color: white;
+  color: #365a5a;
   min-height: 500px;
   font-family: 'Poppins', sans-serif;
 }
@@ -116,7 +126,7 @@
 }
 
 .home .home-content .text-2 span{
-  color: #D61939;
+  color: #f34044;
   font-size: 60px;
   font-weight: 500;
 }
@@ -127,7 +137,7 @@
 .words span{
   display: block;
   height: 100%;
-  color: #D61939;
+  color: #f34044;
   font-size: 60px;
   font-weight: 500;
   animation: spin_words 6s infinite;
@@ -161,17 +171,17 @@ section{
 
 .about{
   font-family: 'Poppins', sans-serif;
+  background-color: #f2f6f5;
 }
 
 .about .title{
   position: relative;
   text-align: center;
   font-size: 40px;
-  color: #141616;
+  color: #1e3e3e;
   font-weight: 600;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  font-family: 'New Rocker', cursive;
 }
 
 .about .about-content{
@@ -181,12 +191,20 @@ section{
   justify-content: space-between;
 }
 
+/* .about .about-content .left{
+  height: 300px;
+  width: 300px;
+  background-color: #1e3e3e;
+  border-radius: 50%;
+  box-shadow: 2px 5px 10px #365a5a;
+} */
+
 .about .about-content .left img{
-  height: 450px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   object-fit: fill;
-  border: 2px solid #141616;
-  border-radius: 6px;
+  border-radius: 50%;
+  background-color: #1e3e3e;
 }
 
 .about .about-content .right{
@@ -197,21 +215,23 @@ section{
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #141616;
+  color: #1e3e3e;
 }
 
 .about .about-content .right p{
   text-align: justify;
   line-height: 25px;
   font-family: 'Poppins', sans-serif;
+  color: black;
 }
 
 .about .about-content .right a{
   display: inline-block;
   color: white;
-  background-color: #D61939;
+  background-color: #1e3e3e;
   text-transform: uppercase;
-  border: 2px solid #D61939;
+  border: 2px solid #1e3e3e;
+  box-shadow: 2px 5px 10px #365a5a;
   padding: 10px 30px;
   margin-top: 20px;
   border-radius: 6px;
@@ -222,15 +242,15 @@ section{
 }
 
 .about .about-content .right a:hover{
-  color: #D61939;
-  border: 2px solid #D61939;
+  color: #1e3e3e;
+  border: 2px solid #1e3e3e;
   background-color: transparent;
 }
 
 /*skills styling*/
 .skills{
   padding: 100px 0;
-  background-color: #141616;
+  background-color: white;
 }
 
 .skills .title{
@@ -238,10 +258,9 @@ section{
   text-align: center;
   font-size: 40px;
   font-weight: 800;
-  color: #D61939;
+  color: #1e3e3e;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  font-family: 'New Rocker', cursive;
 }
 
 .box{
@@ -258,7 +277,8 @@ section{
   width: 300px;
   /* background-color: rgb(23, 84, 138); */
   padding: 25px 20px;
-  border: 2px solid #D61939;
+  border: 2px solid #1e3e3e;
+  box-shadow: 2px 5px 10px #365a5a;
 }
 
 .card p i{
@@ -270,7 +290,7 @@ section{
 
 .card .skills-desc{
   font-size: 18px;
-  color: white;
+  color: black;
   line-height: 27px;
   padding: 10px 8px 0;
 }
@@ -317,6 +337,7 @@ section{
 /*projects styling*/
 .projects{
   padding: 100px 0;
+  background-color: #f2f6f5;
 }
 
 .projects .title{
@@ -324,10 +345,9 @@ section{
   text-align: center;
   font-size: 40px;
   font-weight: 800;
-  color: #141616;
+  color: #1e3e3e;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  font-family: 'New Rocker', cursive;
 }
 .box{
   display: flex;
@@ -342,7 +362,7 @@ section{
   width: 100%;
 }
 footer{
-  background-color: #141616;
+  background-color: #1e3e3e;
   padding: 50px 50px 20px;
 }
 
@@ -362,7 +382,7 @@ footer{
 }
 
 .copyright i:hover{
-  color: #D61939;
+  color: #f34044;
 }
 
 /*Responsive media query start*/
@@ -392,7 +412,7 @@ footer{
   }
   .hamburger i.active::before{
     content: "x";
-    color: white;
+    color: #1e3e3e;
   }
   .navbar .menu{
     position: fixed;
@@ -400,7 +420,7 @@ footer{
     width: 100%;
     left: -100%;
     top: 0;
-    background-color: #141616;
+    background-color: #f2f6f5;
     text-align: center;
     padding-top: 80px;
     transition: all 0.5s ease;
