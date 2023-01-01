@@ -9,7 +9,7 @@
 }
 
 .navbar{
-  background-color: #E8F9FD;
+  background-color: #ffffff;
   z-index: 999;
   width: 100%;
   padding: 5px 0;
@@ -24,6 +24,23 @@
   margin: auto;
 }
 
+.shape{
+  height: 100vh;
+  width: 600px;
+  /* background-color: #112031; */
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.shape .horizontal{
+  height: 100%;
+  width: 50px;
+  background-color: #000;
+}
+
 .navbar .max-width{
   display: flex;
   align-items: center;
@@ -35,7 +52,7 @@
   align-items: center;
 }
 .navbar .logo h1{
-  color: #395B64;
+  color: #000;
 }
 
 .navbar .menu li{
@@ -44,19 +61,20 @@
 }
 
 .navbar .menu li a{
-  color: #395B64;
+  color: #000;
   font-size: 17px;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
   margin-left: 25px;
-  transition: .3s;
+  transition: .5s;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .navbar .menu li a:hover{
-  color: #112031;
-  border-bottom: 2px solid #0f161f;
+  color: #DDDDDD;
+  border-bottom: 2px solid #DDDDDD;
+  transition: .5s;
 }
 
 .navbar .social-media p{
@@ -65,7 +83,7 @@
 }
 
 .navbar .social-media p a{
-  color: #395B64;
+  color: #000;
   font-size: 20px;
   margin-left: 25px;
   transition: .3s;
@@ -73,29 +91,29 @@
 }
 
 .navbar .social-media p a:hover{
-  color: #0f161f;
+  color: #DDDDDD;
   transition: .5s;
 }
 
 /* styling hamburger nav */
 .hamburger{
-  color: #365a5a;
+  color: #000;
   font-size: 23px;
   cursor: pointer;
   display: none;
 }
 
 .hamburger:hover{
-  color: #0f161f;
+  color: #DDDDDD;
 }
 
 /* home section styling */
 .home{
   display: flex;
   /* background: url(./images/background.jpg) center; */
-  background-color: #E8F9FD;
+  background-color: #ffffff;
   height: 100vh;
-  color: #395B64;
+  color: #2C3333;
   min-height: 500px;
   font-family: 'Poppins', sans-serif;
 }
@@ -122,7 +140,7 @@
 }
 
 .home .home-content .text-2 span{
-  color: #1e3e3e;
+  color: #000;
   font-size: 60px;
   font-weight: 500;
 }
@@ -133,7 +151,7 @@
 .words span{
   display: block;
   height: 100%;
-  color: #1e3e3e;
+  color: #000;
   font-size: 60px;
   font-weight: 500;
   animation: spin_words 6s infinite;
@@ -167,14 +185,14 @@ section{
 
 .about{
   font-family: 'Poppins', sans-serif;
-  background-color: #E8F9FD;
+  background-color: #ffffff;
 }
 
 .about .title{
   position: relative;
   text-align: center;
   font-size: 35px;
-  color: #1e3e3e;
+  color: #000;
   font-weight: 600;
   margin-bottom: 60px;
   padding-bottom: 20px;
@@ -185,7 +203,7 @@ section{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 /* .about .about-content .left{
@@ -198,10 +216,10 @@ section{
 
 .about .about-content .left img{
   height: 300px;
-  width: 300px;
-  object-fit: fill;
   border-radius: 50%;
-  background-color: #1e3e3e;
+  background-size: auto;
+  border: 5px solid #6b2731;
+  background-color: #ffffff;
 }
 
 .about .about-content .right{
@@ -212,7 +230,7 @@ section{
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #1e3e3e;
+  color: #000;
 }
 
 .about .about-content .right p{
@@ -225,10 +243,10 @@ section{
 .about .about-content .right a{
   display: inline-block;
   color: white;
-  background-color: #1e3e3e;
+  background-color: #6b2731;
   text-transform: uppercase;
-  border: 2px solid #1e3e3e;
-  box-shadow: 2px 5px 10px #365a5a;
+  border: 2px solid #6b2731;
+  box-shadow: 2px 5px 10px #6b2731;
   padding: 10px 30px;
   margin-top: 20px;
   border-radius: 6px;
@@ -239,8 +257,8 @@ section{
 }
 
 .about .about-content .right a:hover{
-  color: #1e3e3e;
-  border: 2px solid #1e3e3e;
+  color: #6b2731;
+  border: 2px solid #6b2731;
   background-color: transparent;
 }
 
@@ -248,7 +266,7 @@ section{
 .skills{
   padding: 100px 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #E8F9FD;
+  background-color: #ffffff;
 }
 
 .skills .title{
@@ -256,7 +274,7 @@ section{
   text-align: center;
   font-size: 35px;
   font-weight: 600;
-  color: #1e3e3e;
+  color: #000;
   margin-bottom: 60px;
   padding-bottom: 20px;
   text-transform: uppercase;
@@ -276,14 +294,16 @@ section{
   /* height: 300px; */
   width: 300px;
   /* background-color: rgb(23, 84, 138); */
-  background-color: #ceeef5;
+  background-color: #ffffff;
   padding: 25px 20px;
   transition: .2 ease;
+  border-radius: 10px;
+  border: 3px solid #000;
 }
 
-.card:hover{
+/* .card:hover{
   transform: scale(1.1);
-}
+} */
 
 .card p i{
   font-size: 130px;
@@ -294,7 +314,7 @@ section{
 
 .card .skills-desc{
   font-size: 18px;
-  color: black;
+  color: #000;
   line-height: 27px;
   padding: 10px 8px 0;
 }
@@ -342,7 +362,7 @@ section{
 .projects{
   padding: 100px 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #E8F9FD;
+  background-color: #ffffff;
 }
 
 .projects .title{
@@ -350,7 +370,7 @@ section{
   text-align: center;
   font-size: 35px;
   font-weight: 600;
-  color: #1e3e3e;
+  color: #000;
   margin-bottom: 60px;
   padding-bottom: 20px;
 }
@@ -371,7 +391,7 @@ section{
   transform: scale(1.1);
 }
 footer{
-  background-color: #0f161f;
+  background-color: #000;
   padding: 50px 50px 20px;
 }
 
@@ -390,9 +410,6 @@ footer{
   font-size: 40px;
 }
 
-.copyright i:hover{
-  color: #E8F9FD;
-}
 
 /*Responsive media query start*/
 @media(max-width: 1300px){
@@ -402,14 +419,18 @@ footer{
 }
 @media(max-width: 1104px){
   .about .about-content .left img{
-    height: 400px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
+  }
+  .shape .horizontal{
+    display: none;
   }
 }
 @media(max-width: 947px){
   .max-width{
     padding: 0 50px;
   }
+  
 }
 @media(max-width: 991px){
   .max-width{
@@ -421,7 +442,7 @@ footer{
   }
   .hamburger i.active::before{
     content: "x";
-    color: #365a5a;
+    color: #000;
   }
   .navbar .menu{
     position: fixed;
@@ -429,7 +450,7 @@ footer{
     width: 100%;
     left: -100%;
     top: 0;
-    background-color: #E8F9FD;
+    background-color: #ffffff;
     text-align: center;
     padding-top: 80px;
     transition: all 0.5s ease;
@@ -490,7 +511,7 @@ footer{
     width: 250px;
     object-fit: fill;
     border-radius: 50%;
-    background-color: #1e3e3e;
+    background-color: #ffffff;
   }
 }
 @media (max-width: 500px){
@@ -508,6 +529,6 @@ footer{
     width: 200px;
     object-fit: fill;
     border-radius: 50%;
-    background-color: #1e3e3e;
+    background-color: #ffffff;
   }
 }
